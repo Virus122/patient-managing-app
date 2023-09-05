@@ -1,0 +1,4 @@
+{{field?.fieldName}}
+<div *ngIf="field && field.fieldName">
+    {{ field.lastValue | getValue: field.fieldName }}
+</div>

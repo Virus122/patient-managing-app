@@ -1,0 +1,21 @@
+<div class="details">
+    <div class="detail-name">
+        <div class="description-field">
+            <div class="icon" *ngIf="icon">
+                <fa-icon [icon]="icon"></fa-icon>
+            </div>
+            <div class="name">
+                {{details?.name}}
+            </div>
+        </div>
+    </div>
+
+    <div class="value-field">
+        <div class="value">
+            {{details?.value}}
+        </div>
+        <div class="measurement-unit">
+            {{details?.measurementUnit}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+@media (min-width: 1440px) {
+    .toolbar {
+        display: flex;
+        justify-content: space-between;
+        &-left {
+    
+        }
+    
+        &-right {
+            display: flex;
+        }
+    }
+
+    .options-menu {
+        position: absolute;
+        top: 48px; /* Adjust this value to position the menu below the toolbar */
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        display: none;
+        flex-direction: column;
+        .show{
+            display: flex;
+        }
+      }
+}
+
+@media (max-width: 1440px) and (min-width: 768px) {
+    .toolbar {
+        display: flex;
+        justify-content: space-between;
+        &-left {
+    
+        }
+    
+        &-right {
+            display: flex;
+        }
+    }
+
+    .options-menu {
+        position: absolute;
+        top: 48px; /* Adjust this value to position the menu below the toolbar */
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        display: none;
+        flex-direction: column;
+        .show {
+            display: flex;
+        }
+      }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .options-menu {
+        position: absolute;
+        top: 48px; /* Adjust this value to position the menu below the toolbar */
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        display: none;
+        flex-direction: column;
+        .show {
+            display: flex;
+        }
+      }
+}

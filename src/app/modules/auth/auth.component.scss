@@ -1,0 +1,46 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    mat-card {
+        width: 300px;
+      }
+      
+      mat-card-title {
+        text-align: center;
+      }
+      
+      .full-width {
+        width: 100%;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      mat-form-field {
+        margin-bottom: 20px;
+        input {
+            height: 24px;
+            border-radius: 6px;
+        }
+      }
+
+      .no-account {
+        margin-top:24px;
+      }
+
+      .mat-input-element {
+        padding: 10px; 
+        box-sizing: border-box; 
+      }
+  }
+
+
+  
+ 
+  

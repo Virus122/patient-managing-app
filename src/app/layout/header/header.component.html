@@ -1,0 +1,31 @@
+<mat-toolbar color="primary" class="toolbar">
+  <div class="toolbar-left">
+    <button mat-icon-button [matMenuTriggerFor]="menu" (click)="toggleOptions()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <div class="toolbar-right">
+    <button mat-icon-button>
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <button mat-icon-button>
+        <mat-icon>notifications</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/custom/dashboard">
+    <mat-icon>dashboard</mat-icon>
+    <span>Dashboard</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>voicemail</mat-icon>
+    <span>Check voice mail</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
+  </button>
+</mat-menu>

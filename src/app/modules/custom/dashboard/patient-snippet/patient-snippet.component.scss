@@ -1,0 +1,45 @@
+.patient {
+    // background-color: rgb(227,126,37);
+    background-color: rgb(112,165,151);
+    width:240px;
+    padding:4px;
+    border-radius: 12px;
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 0;
+        margin-bottom: 2px;
+        .full-name {
+            display: flex;
+            .firstname {
+                margin-right:12px;
+            }
+        }
+    }
+
+    .body {
+        .category {
+            display:flex;
+            justify-content: space-between;
+            .name {
+                font-size: x-small;
+            }
+        }
+    }
+
+    .expandButton {
+        display: flex;
+        justify-content: center;
+        .button {
+            background-color: rgb(227,126,37);
+            width: 120px;
+            height: 24px;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 12px;
+        }
+    }
+}

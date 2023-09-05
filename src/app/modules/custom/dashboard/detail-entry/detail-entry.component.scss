@@ -1,0 +1,32 @@
+.details {
+    // border:1px solid rgb(112,165,151);
+    background-color: rgb(227,126,37);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 4px;
+    .detail-name {
+        display: flex;
+        .description-field {
+            display: flex;
+            font-size: small;
+            align-items: center;
+            .name {
+                margin-left: 12px;
+            }
+        }
+    }
+
+    .value-field {
+        display: flex;
+        align-items: center;
+        .value {
+            margin-right: 6px;
+        }
+        .measurement-unit {
+            font-size: x-small;
+            font-weight: bold;
+        }
+    }
+}

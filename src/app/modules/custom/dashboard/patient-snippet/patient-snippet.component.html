@@ -1,0 +1,30 @@
+<div class="patient" *ngIf="patient">
+    <div class="header">
+        <div class="full-name">
+            <div class="firstname">
+                {{patient.firstname}}
+            </div>
+            <div class="surname">
+                {{patient.lastname}},
+            </div>
+        </div>
+
+        <div class="age">
+            {{patient.age}}
+        </div>
+    </div>
+
+    <div class="body">
+        <div *ngFor="let category of categories">
+            <app-detail-entry [details]="category">
+
+            </app-detail-entry>
+
+        </div>
+    </div>
+
+    <div class="expandButton">
+        <button class="button" [routerLink]="['../patients', patient.patient_id]">Expand</button>
+
+    </div>
+</div>
